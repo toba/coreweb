@@ -6,15 +6,15 @@ import (
 	"net/url"
 	"testing"
 
+	"github.com/toba/goweb/web"
 	"github.com/toba/goweb/web/socket"
-	"toba.tech/app/lib/config"
 
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"
 )
 
 var (
-	c        = config.HTTP{}
+	c        = web.Config{}
 	hello    = []byte("hello")
 	world    = []byte("world")
 	upgrader = websocket.Upgrader{

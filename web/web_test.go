@@ -13,11 +13,10 @@ import (
 	"github.com/toba/goweb/web/header/content"
 	"github.com/toba/goweb/web/mime"
 	"toba.tech/app/lib/auth"
-	"toba.tech/app/lib/config"
 )
 
 var (
-	c = config.HTTP{
+	c = web.Config{
 		FromZip:    "",
 		FromFolder: "static",
 	}
