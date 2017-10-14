@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"log"
 
+	"github.com/golang/protobuf/proto"
 	"github.com/toba/coreweb/socket"
 )
 
@@ -82,8 +83,8 @@ const (
 func Handle(endpoints ServiceMap) socket.RequestHandler {
 	return func(socketRequest *socket.Request) []byte {
 		var res *Response
-		raw := &rawRequest{}
-		err := json.Unmarshal(socketRequest.Message, raw)
+		raw := &ServiceRequest{}
+		err := proto.Unmarshal(socketRequest.Message, raw)
 
 		if err != nil {
 			res = Error(UnableToParseRequest)

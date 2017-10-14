@@ -21,11 +21,22 @@
          }
       },
       {
-         "taskName": "Compile protobuf",
+         "taskName": "Compile test protobuf",
          "command": "protoc",
          "args": [
             "--go_out=.",
             "./test/request1.proto"
+         ],
+         "problemMatcher": [
+            "$go"
+         ]
+      },
+      {
+         "taskName": "Compile service protobuf",
+         "command": "protoc",
+         "args": [
+            "--go_out=.",
+            "./service/request.proto"
          ],
          "problemMatcher": [
             "$go"
