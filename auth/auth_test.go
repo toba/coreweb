@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/toba/coreweb/web/auth"
+	"github.com/toba/coreweb/auth"
 )
 
 var (

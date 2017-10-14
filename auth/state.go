@@ -4,7 +4,7 @@ import (
 	"encoding/base64"
 	"time"
 
-	"github.com/toba/coreweb/web/token"
+	"github.com/toba/coreweb/token"
 )
 
 // State represents the OAuth2 state, encoded and passed with the standard

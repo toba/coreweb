@@ -6,15 +6,15 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/toba/coreweb/web"
-	"github.com/toba/coreweb/web/socket"
+	"github.com/toba/coreweb"
+	"github.com/toba/coreweb/socket"
 
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"
 )
 
 var (
-	c        = web.Config{}
+	c        = coreweb.Config{}
 	hello    = []byte("hello")
 	world    = []byte("world")
 	upgrader = websocket.Upgrader{

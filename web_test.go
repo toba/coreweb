@@ -1,4 +1,4 @@
-package web_test
+package coreweb_test
 
 // https://elithrar.github.io/article/testing-http-handlers-go/
 import (
@@ -7,12 +7,12 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/toba/coreweb/web"
-	"github.com/toba/coreweb/web/auth"
-	"github.com/toba/coreweb/web/encoding"
-	"github.com/toba/coreweb/web/header/accept"
-	"github.com/toba/coreweb/web/header/content"
-	"github.com/toba/coreweb/web/mime"
+	"github.com/toba/coreweb"
+	"github.com/toba/coreweb/auth"
+	"github.com/toba/coreweb/encoding"
+	"github.com/toba/coreweb/header/accept"
+	"github.com/toba/coreweb/header/content"
+	"github.com/toba/coreweb/mime"
 )
 
 var (

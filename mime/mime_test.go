@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/toba/coreweb/web/mime"
+	"github.com/toba/coreweb/mime"
 )
 
 func TestInfer(t *testing.T) {

@@ -1,4 +1,4 @@
-package web
+package coreweb
 
 type Config struct {
 	SslCert    string `json:"sslCert"`    // SslCert is the path and name of the SSL certificate file.

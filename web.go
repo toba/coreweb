@@ -1,5 +1,5 @@
 // Package web manages the HTTP server and constants.
-package web
+package coreweb
 
 import (
 	"fmt"
@@ -9,10 +9,10 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/toba/coreweb/web/auth"
-	"github.com/toba/coreweb/web/encoding"
-	"github.com/toba/coreweb/web/file"
-	"github.com/toba/coreweb/web/header/accept"
+	"github.com/toba/coreweb/auth"
+	"github.com/toba/coreweb/encoding"
+	"github.com/toba/coreweb/file"
+	"github.com/toba/coreweb/header/accept"
 )
 
 const (

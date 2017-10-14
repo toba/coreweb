@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/toba/coreweb/web/"
-	"github.com/toba/coreweb/web/file"
-	"github.com/toba/coreweb/web/socket"
+	"github.com/toba/coreweb/"
+	"github.com/toba/coreweb/file"
+	"github.com/toba/coreweb/socket"
 	"toba.tech/app/lib/config"
 	"toba.tech/app/lib/db"
 	"toba.tech/app/lib/host"

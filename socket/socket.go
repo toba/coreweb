@@ -9,7 +9,7 @@ import (
 	"os"
 	"runtime/debug"
 
-	"github.com/toba/coreweb/web"
+	"github.com/toba/coreweb"
 )
 
 type (
@@ -41,7 +41,7 @@ const (
 // caller" according to
 //
 // https://github.com/gorilla/websocket/commit/ea4d1f681babbce9545c9c5f3d5194a789c89f5b
-func Handle(c web.Config, responder RequestHandler) func(w http.ResponseWriter, r *http.Request) {
+func Handle(c coreweb.Config, responder RequestHandler) func(w http.ResponseWriter, r *http.Request) {
 	broadcast = make(chan []byte)
 	request = make(chan *Request)
 	register = make(chan *Client)
