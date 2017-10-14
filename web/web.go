@@ -9,14 +9,10 @@ import (
 	"runtime/debug"
 	"strings"
 
+	"github.com/toba/goweb/web/encoding"
+	"github.com/toba/goweb/web/file"
 	"toba.tech/app/lib/auth"
-	"toba.tech/app/lib/config"
-	"toba.tech/app/lib/web/encoding"
-	"toba.tech/app/lib/web/file"
 	"toba.tech/app/lib/web/header/accept"
-
-	// load embedded assets
-	_ "toba.tech/app/assets"
 )
 
 const (
@@ -41,7 +37,7 @@ func webPath(path string) string {
 //
 // 	https://cryptic.io/go-http/
 //
-func Handle(c config.HTTP, modulePaths []string, authPaths map[string]*auth.AuthProvider) func(w http.ResponseWriter, r *http.Request) {
+func Handle(c Config.HTTP, modulePaths []string, authPaths map[string]*auth.AuthProvider) func(w http.ResponseWriter, r *http.Request) {
 	cache := &file.Map{Files: make(map[string]*file.Info)}
 	var (
 		m   *file.Map

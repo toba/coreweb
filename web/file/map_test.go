@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"toba.tech/app/lib/web/file"
-	"toba.tech/app/lib/web/header/content"
-	"toba.tech/app/lib/web/mime"
+	"github.com/toba/goweb/web/file"
+	"github.com/toba/goweb/web/header/content"
+	"github.com/toba/goweb/web/mime"
 )
 
 func TestMapRead(t *testing.T) {

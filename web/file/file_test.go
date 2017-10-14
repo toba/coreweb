@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"toba.tech/app/lib/web/file"
+	"github.com/toba/goweb/web/file"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -7,14 +7,13 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-
+	"github.com/toba/goweb/web"
+	"github.com/toba/goweb/web/encoding"
+	"github.com/toba/goweb/web/header/accept"
+	"github.com/toba/goweb/web/header/content"
+	"github.com/toba/goweb/web/mime"
 	"toba.tech/app/lib/auth"
 	"toba.tech/app/lib/config"
-	"toba.tech/app/lib/web"
-	"toba.tech/app/lib/web/encoding"
-	"toba.tech/app/lib/web/header/accept"
-	"toba.tech/app/lib/web/header/content"
-	"toba.tech/app/lib/web/mime"
 )
 
 var (

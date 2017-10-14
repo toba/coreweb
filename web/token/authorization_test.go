@@ -3,7 +3,7 @@ package token_test
 import (
 	"testing"
 
-	"toba.tech/app/lib/web/token"
+	"github.com/toba/goweb/web/token"
 
 	"github.com/stretchr/testify/assert"
 )

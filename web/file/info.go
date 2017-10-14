@@ -7,11 +7,11 @@ import (
 
 	"compress/gzip"
 
-	"toba.tech/app/lib/web/encoding"
-	"toba.tech/app/lib/web/header"
-	"toba.tech/app/lib/web/header/accept"
-	"toba.tech/app/lib/web/header/content"
-	"toba.tech/app/lib/web/mime"
+	"github.com/toba/goweb/web/encoding"
+	"github.com/toba/goweb/web/header"
+	"github.com/toba/goweb/web/header/accept"
+	"github.com/toba/goweb/web/header/content"
+	"github.com/toba/goweb/web/mime"
 )
 
 // Info contains information about a file and optionally its byte content and
