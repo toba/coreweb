@@ -3,7 +3,7 @@ package auth_test
 import (
 	"testing"
 
-	"toba.tech/app/lib/auth"
+	"github.com/toba/coreweb/web/auth"
 
 	"github.com/stretchr/testify/assert"
 )

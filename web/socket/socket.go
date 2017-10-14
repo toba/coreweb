@@ -9,7 +9,7 @@ import (
 	"os"
 	"runtime/debug"
 
-	"github.com/toba/goweb/web"
+	"github.com/toba/coreweb/web"
 )
 
 type (

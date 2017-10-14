@@ -8,29 +8,19 @@ import (
 	"os"
 	"time"
 
+	"github.com/toba/coreweb/web/"
+	"github.com/toba/coreweb/web/file"
+	"github.com/toba/coreweb/web/socket"
 	"toba.tech/app/lib/config"
 	"toba.tech/app/lib/db"
 	"toba.tech/app/lib/host"
 	"toba.tech/app/lib/ldap"
 	"toba.tech/app/lib/license"
 	"toba.tech/app/lib/module"
-	"toba.tech/app/lib/web"
-	"toba.tech/app/lib/web/file"
-	"toba.tech/app/lib/web/socket"
-	"toba.tech/app/modules/cogs"
-	"toba.tech/app/modules/person"
-	"toba.tech/app/modules/setup"
 	"toba.tech/app/modules/system"
 )
 
 var (
-	freeModules = []*module.ModuleInfo{
-		system.Module,
-		person.Module,
-		setup.Module,
-		cogs.Module,
-	}
-
 	flagSilent   = flag.Bool("silent", false, "Do not launch browser window when running setup mode.")
 	flagDebug    = flag.Bool("debug", false, "Debug mode.")
 	flagFiles    = flag.String("files", "", "File path")

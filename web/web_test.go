@@ -7,17 +7,16 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/toba/goweb/web"
-	"github.com/toba/goweb/web/encoding"
-	"github.com/toba/goweb/web/header/accept"
-	"github.com/toba/goweb/web/header/content"
-	"github.com/toba/goweb/web/mime"
-	"toba.tech/app/lib/auth"
+	"github.com/toba/coreweb/web"
+	"github.com/toba/coreweb/web/auth"
+	"github.com/toba/coreweb/web/encoding"
+	"github.com/toba/coreweb/web/header/accept"
+	"github.com/toba/coreweb/web/header/content"
+	"github.com/toba/coreweb/web/mime"
 )
 
 var (
 	c = web.Config{
-		FromZip:    "",
 		FromFolder: "static",
 	}
 	modulePaths = []string{"module1", "module2"}

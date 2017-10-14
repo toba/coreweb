@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/toba/goweb/web"
-	"github.com/toba/goweb/web/socket"
+	"github.com/toba/coreweb/web"
+	"github.com/toba/coreweb/web/socket"
 
 	"github.com/gorilla/websocket"
 	"github.com/stretchr/testify/assert"

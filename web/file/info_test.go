@@ -4,10 +4,10 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/toba/goweb/web/encoding"
-	"github.com/toba/goweb/web/file"
-	"github.com/toba/goweb/web/header/content"
-	"github.com/toba/goweb/web/mime"
+	"github.com/toba/coreweb/web/encoding"
+	"github.com/toba/coreweb/web/file"
+	"github.com/toba/coreweb/web/header/content"
+	"github.com/toba/coreweb/web/mime"
 )
 
 func TestInfoReplace(t *testing.T) {

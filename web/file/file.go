@@ -12,10 +12,10 @@ import (
 
 	"time"
 
-	"github.com/toba/goweb/web/encoding"
-	"github.com/toba/goweb/web/header"
-	"github.com/toba/goweb/web/header/content"
-	"github.com/toba/goweb/web/mime"
+	"github.com/toba/coreweb/web/encoding"
+	"github.com/toba/coreweb/web/header"
+	"github.com/toba/coreweb/web/header/content"
+	"github.com/toba/coreweb/web/mime"
 )
 
 const slash = string(os.PathSeparator)

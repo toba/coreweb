@@ -63,9 +63,6 @@ type (
 		Key string         `json:"key"`
 		URL string         `json:"url"`
 	}
-
-	// TenantLogin processes tenant login.
-	TenantLogin func(state *State) error
 )
 
 // Hardcode specific numbers instead of using iota to ensure they don't change.
@@ -84,16 +81,12 @@ const (
 	Yahoo     AuthProviderID = 110
 )
 
-var (
-	// list of active authentication providers.
-	providers   []*AuthProvider
-	tenantLogin TenantLogin
-)
+// list of active authentication providers.
+var providers []*AuthProvider
 
 // Initialize defines the active authentication providers and login callbacks.
-func Initialize(fn TenantLogin, p ...*AuthProvider) error {
+func Initialize(p ...*AuthProvider) error {
 	providers = p
-	tenantLogin = fn
 	return nil
 }
 
@@ -135,7 +128,7 @@ func (auth *AuthProvider) Initialize(clientID, clientSecret string) {
 	auth.ClientSecret = clientSecret
 }
 
-// Link builds a simplified struct for client use.
+// Link builds a simplified struct for browser client use.
 func (auth *AuthProvider) Link(baseURL, state string) *AuthLink {
 	auth.RedirectURL = baseURL + "/auth/" + auth.Key
 	return &AuthLink{
@@ -209,7 +202,7 @@ func (auth *AuthProvider) HandleCallback(w http.ResponseWriter, r *http.Request)
 		return
 	}
 
-	err = tenantLogin(stateToken)
+	//err = tenantLogin(stateToken)
 
 	log.Print("Access Token: " + token.AccessToken)
 

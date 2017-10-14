@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/toba/goweb/web/header"
+	"github.com/toba/coreweb/web/header"
 
 	"strings"
 

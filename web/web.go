@@ -9,10 +9,10 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/toba/goweb/web/encoding"
-	"github.com/toba/goweb/web/file"
-	"github.com/toba/goweb/web/header/accept"
-	"toba.tech/app/lib/auth"
+	"github.com/toba/coreweb/web/auth"
+	"github.com/toba/coreweb/web/encoding"
+	"github.com/toba/coreweb/web/file"
+	"github.com/toba/coreweb/web/header/accept"
 )
 
 const (
