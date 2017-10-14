@@ -9,7 +9,6 @@
          "windows": {
             "command": "go build -o toba-debug.exe ./cmd/server/main.go; .\\toba-debug.exe -debug=true -silent=true -local=tobal.local"
          },
-         "type": "shell",
          "group": "build",
          "problemMatcher": [
             "$go"
@@ -20,6 +19,17 @@
             "focus": false,
             "panel": "dedicated"
          }
+      },
+      {
+         "taskName": "Compile protobuf",
+         "command": "protoc",
+         "args": [
+            "--go_out=.",
+            "./test/request1.proto"
+         ],
+         "problemMatcher": [
+            "$go"
+         ]
       }
    ]
 }

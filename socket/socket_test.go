@@ -55,7 +55,7 @@ func TestServiceMessage(t *testing.T) {
 
 	defer conn.Close()
 
-	err := conn.WriteMessage(websocket.TextMessage, hello)
+	err := conn.WriteMessage(websocket.BinaryMessage, hello)
 	assert.NoError(t, err)
 
 	messageType, res, err := conn.ReadMessage()

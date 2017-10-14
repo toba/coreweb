@@ -1,2 +1,7 @@
 # Overview
-Toba coreweb provides provides HTTP, web sockets and OAuth.
+Toba coreweb provides HTTP, web sockets and OAuth.
+
+# Testing
+```
+go get -u github.com/golang/protobuf/protoc-gen-go
+```
