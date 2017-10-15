@@ -24,8 +24,8 @@
          "taskName": "Compile test protobuf",
          "command": "protoc",
          "args": [
-            "--go_out=.",
-            "./test/request1.proto"
+            "--go_out=plugins=grpc:.",
+            "./test/service1.proto"
          ],
          "problemMatcher": [
             "$go"
